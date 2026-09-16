@@ -12,15 +12,9 @@ My background is in product design. Today I design the system, build the interfa
 
 ## Selected systems / 2026
 
-```text
-01  CONTRA MCP STARTER     MCP / OAuth / Node.js / open source
-02  CONTENT OS             Astro / Git / Ghost / Cloudflare
-03  LIVEDXB                Dubai property intelligence
-04  REAL ESTATE CRM        owners / properties / outreach / automation
-05  WHATSAPP CRM           multi-number operations / client history
-06  NEVSKY OS              personal OS / AI / D1 / Workers
-07  PROMPULSE              B2B industrial intelligence
-```
+<p align="center">
+  <img src="assets/systems-index.svg" width="100%" alt="Animated index of active systems and products" />
+</p>
 
 ### 01 — [Contra MCP Starter](https://github.com/alexandernevsky/contra-mcp-starter)
 
@@ -52,19 +46,31 @@ It is a Dubai property and city intelligence product built around a simple idea:
 
 I am building it as a decision layer rather than another listings website: editorial research + structured knowledge about communities and buildings + market data + practical buying logic.
 
+<p align="center">
+  <img src="assets/livedxb-thesis.svg" width="100%" alt="Animated LiveDXB product thesis and production architecture" />
+</p>
+
 LiveDXB is already running on an Astro production layer with Cloudflare Pages and an origin Worker; the broader publishing architecture is being generalized from this work.
 
 ### 04 — Real Estate CRM
 
-A custom CRM built around my actual Dubai property workflow rather than a generic sales funnel.
+A custom broker CRM built around my actual Dubai property workflow rather than a generic sales funnel.
 
-Properties, owners, outreach, conversations, client history and operational automation live in one system. The product is designed around the real friction of property consulting: fragmented owner data, repeated outreach, multiple communication channels and long-running relationships.
+Owners, buyers, opportunities, notes, follow-ups and outreach live in one system. Operational owner waves are materialized into the CRM automatically and idempotently, while outreach history remains part of the client timeline rather than living in disconnected spreadsheets.
+
+<p align="center">
+  <img src="assets/broker-crm.svg" width="100%" alt="Animated Nevsky Broker CRM owner outreach workflow" />
+</p>
 
 ### 05 — WhatsApp CRM
 
-Currently building a multi-number WhatsApp operations system with a web/mobile supervisor layer.
+Currently building a separate multi-number WhatsApp operations system with a web/mobile supervisor layer.
 
 Multiple operators can work from their own numbers while one supervisor sees conversations centrally, keeps persistent client history and can step into a conversation when needed. Each dialogue becomes part of a durable client record instead of disappearing inside an individual phone.
+
+<p align="center">
+  <img src="assets/whatsapp-crm.svg" width="100%" alt="Animated WhatsApp CRM multi-number supervisor topology" />
+</p>
 
 ### 06 — Nevsky OS
 
@@ -82,33 +88,15 @@ It turns fragmented public information into structured signals that can be monit
 
 ## Cloudflare is my default runtime
 
-A lot of what I ship eventually ends up on Cloudflare. I like infrastructure that stays close to the product, removes unnecessary servers and gives small systems room to become serious systems without a rewrite on day one.
+A lot of what I ship eventually ends up on Cloudflare. I like infrastructure that stays close to the product, removes unnecessary servers and lets a small system grow into a serious one without an infrastructure rewrite on day one.
 
-```text
-GITHUB
-   │
-   ▼
- BUILD
-   │
-   ▼
-CLOUDFLARE
-   │
-   ├── Pages       static products / previews / deployments
-   ├── Workers     APIs / edge logic / SSR / automation
-   ├── D1          relational application state
-   ├── R2          media / object storage / CDN origin
-   ├── Turnstile   abuse protection
-   └── DNS + CDN   routing / caching / delivery
-```
+<p align="center">
+  <img src="assets/cloudflare-runtime.svg" width="100%" alt="Animated Cloudflare runtime across Pages, Workers, D1, R2, Turnstile and DNS" />
+</p>
 
-Current examples include Astro publications on Pages, owner-controlled media in R2, Workers for APIs and origin logic, D1 for application state, and Cloudflare-native forms / anti-abuse infrastructure.
+My default bias is simple: Git-backed where practical, static-first where possible, Workers when logic belongs at the edge, D1 when the product needs relational state, R2 for owned media and objects, and Cloudflare DNS/CDN as the delivery layer.
 
-```text
-servers I want to babysit     0
-moving parts                  fewer
-deploys                       boring
-ownership                     high
-```
+I want deployments to be boring, ownership to stay high, and the number of servers I personally babysit to stay at zero.
 
 ---
 
