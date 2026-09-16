@@ -6,10 +6,33 @@ alexander@dubai:~$ whoami
 ALEXANDER NEVSKY
 AI PRODUCT DESIGNER & BUILDER
 
-location    Dubai, UAE
-focus       products / agents / automation / software
-runtime     human + AI
-state       shipping
+Dubai, UAE
+human + AI
+state: shipping
+```
+
+```text
+portrait@dubai:~$ render
+--ascii --width 30
+
+:::::::::..:-====-:..:::::::::
+:::::...-=*%@@@@@@%*-:........
+......-%@@@@@@@@@@@@%#=.......
+.....+@@#####****+++++#*. ....
+    -@%++++++++==--::.:*- ....
+    -%==****+++++===-:.=:
+    .=-*#%%%##**#%%##+::
+    :-=*#%%%%#+=*%@%*+-.
+   :#-=****##*+::=++-:.:-    .
+   .#--+*****++:.=+=-:.-- .=--
+    :--+**##%%##**#*+-::. .:::
+::::.-=**#@@@@%@@@@#+=-  .
+:.::::*%%@%##%@%*+*%*+= ..  ..
+:-..:+*@@@@@%@@@#*%@@@*:...:=*
+.:...=##@@@@@@@@@@@@#=#%*++-:=
+..:+%%#=*%@@@@@@@%#+-::%@*=:. 
++*@@+*=+++***#***+++=--%@#+*+-
+@@@=.+*+++++++++++++==*@%#####
 ```
 
 I design and build digital products end to end — product logic, UX/UI, software, APIs, automation and deployment.
