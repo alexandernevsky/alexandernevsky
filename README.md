@@ -1,115 +1,180 @@
 # Alexander Nevsky
 
-**AI Product Designer & Builder based in Dubai**
+```text
+alexander@dubai:~$ whoami
 
-I design and build digital products end to end — from product logic and interface design to working software, APIs, automation and deployment.
+ALEXANDER NEVSKY
+AI PRODUCT DESIGNER & BUILDER
+
+location    Dubai, UAE
+focus       products / agents / automation / software
+runtime     human + AI
+state       shipping
+```
+
+I design and build digital products end to end — product logic, UX/UI, software, APIs, automation and deployment.
 
 My background is in product design. Today I design the system, build the interface, wire the APIs and ship the working product — usually with AI coding agents somewhere in the loop.
 
-## Selected systems I'm building
+---
 
-### [Contra MCP Starter](https://github.com/alexandernevsky/contra-mcp-starter)
+## Selected systems / 2026
+
+```text
+01  CONTRA MCP STARTER     MCP / OAuth / Node.js / open source
+02  CONTENT OS             Astro / Git / Ghost / Cloudflare
+03  LIVEDXB                Dubai property intelligence
+04  REAL ESTATE CRM        owners / properties / outreach / automation
+05  WHATSAPP CRM           multi-number operations / client history
+06  NEVSKY OS              personal OS / AI / D1 / Workers
+07  PROMPULSE              B2B industrial intelligence
+```
+
+### 01 — [Contra MCP Starter](https://github.com/alexandernevsky/contra-mcp-starter)
 
 Open-source toolkit for working with Contra through Model Context Protocol and AI coding agents — OAuth 2.0 PKCE, token refresh, safe agent workflows and Content-as-Code templates.
 
-### Multi-tenant publishing engine
+### 02 — Multi-tenant publishing engine
 
-I'm building one Astro-based publishing architecture that powers three independent products:
+I am building one Astro-based publishing architecture for three independent products:
 
-- [nevsky.ae](https://nevsky.ae) — my personal editorial hub
-- [LiveDXB](https://livedxb.com) — Dubai property and city intelligence
+- [nevsky.ae](https://nevsky.ae) — personal editorial hub
+- [livedxb.com](https://livedxb.com) — Dubai property and city intelligence
 - [nevskii.me](https://nevskii.me) — product, design and AI work
 
-These are not three copies of the same website.
+They are not three copies of one website. Each tenant keeps its own identity, taxonomy, navigation, layouts, languages, metadata and publishing rules while sharing the production engine and infrastructure.
 
-They share one production engine and common infrastructure, while each tenant keeps its own identity, content model, taxonomy, navigation, layouts, languages, metadata and publishing rules.
+```text
+                         CONTENT OS
 
-A single source material can become different outputs depending on the destination: a long-form article for one publication, a differently framed version for another tenant, and platform-specific social copy for distribution.
+                       LOCAL GHOST
+                           │
+                           ▼
+                   PROPOSED REVISION
+                           │
+                           ▼
+                     GIT CANONICAL
+                           │
+                           ▼
+                       ASTRO ENGINE
+                           │
+             ┌─────────────┼─────────────┐
+             │             │             │
+             ▼             ▼             ▼
+        nevsky.ae      livedxb.com    nevskii.me
+        editorial       property       product / AI
+                           │
+                           ▼
+                       CLOUDFLARE
+               Pages / Workers / R2 / CDN
+```
 
-The system is deliberately local-first and Git-backed. Ghost can remain an authoring source where it makes sense, Astro handles the production layer, and Cloudflare handles deployment and delivery.
+The model is deliberately local-first and Git-backed. Ghost can stay where it is useful as an authoring interface; reviewed content becomes canonical in Git; Astro produces the publication layer; Cloudflare handles delivery and infrastructure.
 
-The goal is not automated cross-posting. It is one content operating system capable of running several genuinely different publications without collapsing them into the same product.
+The goal is not blind cross-posting. One source can become different editorial outputs for different publications and, later, platform-specific social versions without collapsing all of them into the same voice.
 
-### [LiveDXB](https://livedxb.com)
+### 03 — [LiveDXB](https://livedxb.com)
 
-LiveDXB is the most ambitious publication running on that architecture.
+LiveDXB is the most ambitious publication in this architecture.
 
-It is a structured Dubai property and city intelligence product built around the idea that choosing property is not just choosing a unit — it is choosing the system around it: community, school routes, traffic, service charges, daily costs, future supply, liquidity and exit logic.
+It is a Dubai property and city intelligence product built around a simple idea: choosing a property is not only choosing a unit. You are choosing the system around it — community, schools, routes, traffic, service charges, daily costs, future supply, liquidity and exit logic.
 
-I am building it as an independent decision layer rather than another property-listing website: part editorial product, part structured property knowledge base, and eventually a research interface around communities, buildings and market data.
+I am building it as a decision layer rather than another listings website: editorial research + structured knowledge about communities and buildings + market data + practical buying logic.
 
-### [nevsky.ae](https://nevsky.ae)
+LiveDXB is already running on an Astro production layer with Cloudflare Pages and an origin Worker; the broader publishing architecture is being generalized from this work.
 
-My personal editorial system and the broadest publication in the architecture.
-
-It connects the things I actually work on — Dubai property, product design, AI-assisted development, software experiments and personal research — without forcing them into separate identities.
-
-It is also where I can test publishing ideas and infrastructure before turning them into reusable capabilities across the other tenants.
-
-### Real Estate CRM
+### 04 — Real Estate CRM
 
 A custom CRM built around my actual Dubai property workflow rather than a generic sales funnel.
 
-Properties, owners, outreach, conversations, client history and operational automation live in one system. The product is designed around the actual friction of property consulting: fragmented owner data, repeated outreach, multiple communication channels and long-running client relationships.
+Properties, owners, outreach, conversations, client history and operational automation live in one system. The product is designed around the real friction of property consulting: fragmented owner data, repeated outreach, multiple communication channels and long-running relationships.
 
-### WhatsApp CRM
+### 05 — WhatsApp CRM
 
-Currently building a multi-number WhatsApp operations system with a web/mobile control layer.
+Currently building a multi-number WhatsApp operations system with a web/mobile supervisor layer.
 
-Multiple operators can work from their own WhatsApp numbers while one supervisor gets a centralized view, persistent client history and the ability to step into a conversation when needed.
+Multiple operators can work from their own numbers while one supervisor sees conversations centrally, keeps persistent client history and can step into a conversation when needed. Each dialogue becomes part of a durable client record instead of disappearing inside an individual phone.
 
-Each dialogue becomes part of a durable client record instead of disappearing inside an individual phone or operator account. The interesting problem is not messaging itself — it is creating a reliable operational layer around conversations that normally live in personal messaging apps.
-
-### Nevsky OS
+### 06 — Nevsky OS
 
 A personal and family operating system running on Cloudflare Pages, D1 and Workers.
 
-It combines daily workflows, tasks, learning, family logistics, finance and AI-assisted interfaces in one system, with its own Copilot API and several purpose-specific surfaces.
+It combines daily workflows, tasks, learning, family logistics, finance and AI-assisted interfaces, with its own Copilot API and several purpose-specific surfaces.
 
-### Prompulse
+### 07 — Prompulse
 
 A B2B intelligence system for detecting industrial signals around refinery turnarounds, maintenance, modernization and energy projects.
 
 It turns fragmented public information into structured signals that can be monitored and acted on.
 
-## Selected shipped web projects
+---
 
-A few recent things I've designed, built or brought into production:
+## Cloudflare is my default runtime
 
-- [nevsky.ae](https://nevsky.ae) — personal editorial platform
-- [LiveDXB](https://livedxb.com) — Dubai property & city intelligence
-- [nevskii.me](https://nevskii.me) — Product & AI portfolio
-- [Connection Middle East](https://connectionme.ae) — UAE corporate services platform
-- [Anastasiia Shuklina Consulting](https://shuklina-consulting.fr) — bilingual consulting website
-- [Horizon Commodities Trading](https://horizonctltd.nevsky.ae) — multilingual corporate platform
-- [PAC Journeys](https://pacjourneys.nevsky.me) — travel website
-- [Prompulse](https://prompulse.nevskii.me) — industrial intelligence
-- [Nevsky Mortgage](https://mortgage.nevsky.ae) — Dubai mortgage calculator
+A lot of what I ship eventually ends up on Cloudflare. I like infrastructure that stays close to the product, removes unnecessary servers and gives small systems room to become serious systems without a rewrite on day one.
 
-## What I work with
+```text
+GITHUB
+   │
+   ▼
+ BUILD
+   │
+   ▼
+CLOUDFLARE
+   │
+   ├── Pages       static products / previews / deployments
+   ├── Workers     APIs / edge logic / SSR / automation
+   ├── D1          relational application state
+   ├── R2          media / object storage / CDN origin
+   ├── Turnstile   abuse protection
+   └── DNS + CDN   routing / caching / delivery
+```
 
-`TypeScript` · `JavaScript` · `Node.js` · `Astro` · `Cloudflare` · `Supabase`
+Current examples include Astro publications on Pages, owner-controlled media in R2, Workers for APIs and origin logic, D1 for application state, and Cloudflare-native forms / anti-abuse infrastructure.
 
-`APIs` · `MCP` · `AI Agents` · `Automation` · `LLM Workflows`
+```text
+servers I want to babysit     0
+moving parts                  fewer
+deploys                       boring
+ownership                     high
+```
 
-`Product Design` · `Figma` · `Design Systems` · `UX Architecture`
+---
 
-I actively build with Claude Code, Cursor, Google Antigravity, Codex and other AI coding systems.
+## Selected shipped web work
 
-## How I work
+Recent production work and live products:
 
-I usually start with a product or operational problem, reduce it to the smallest useful system, design the interaction and architecture, and ship a working version.
+| Project | What it is |
+| --- | --- |
+| [nevsky.ae](https://nevsky.ae) | Personal editorial platform / publishing architecture |
+| [livedxb.com](https://livedxb.com) | Dubai property & city intelligence |
+| [nevskii.me](https://nevskii.me) | Product, design & AI portfolio |
+| [connectionme.ae](https://connectionme.ae) | UAE corporate services platform |
+| [shuklina-consulting.fr](https://shuklina-consulting.fr) | Bilingual consulting website |
+| [horizonctltd.nevsky.ae](https://horizonctltd.nevsky.ae) | Multilingual corporate platform / staging deployment |
+| [pacjourneys.ae](https://pacjourneys.ae) | Travel website |
+| [mortgage.nevsky.ae](https://mortgage.nevsky.ae) | Dubai mortgage calculator |
 
-I'm particularly interested in the point where product design, software engineering and AI-assisted development stop being separate disciplines.
+---
+
+## Stack
+
+```text
+PRODUCT      Product Design / UX Architecture / Design Systems / Figma
+WEB          TypeScript / JavaScript / Node.js / Astro
+INFRA        Cloudflare Pages / Workers / D1 / R2
+SYSTEMS      APIs / MCP / Automation / LLM Workflows
+AGENTS       Codex / Claude Code / Cursor / Google Antigravity
+```
+
+I am particularly interested in the point where product design, software engineering and AI-assisted development stop being separate disciplines.
+
+---
 
 ## Elsewhere
 
-**Product & AI work** — [nevskii.me](https://nevskii.me)
-
-**Writing, Dubai & projects** — [nevsky.ae](https://nevsky.ae)
-
-**Contra** — [contra.com/alexander_nevsky](https://contra.com/alexander_nevsky)
-
-**LinkedIn** — [linkedin.com/in/nevskyalexander](https://linkedin.com/in/nevskyalexander)
-
-Dubai, UAE
+[nevskii.me](https://nevskii.me) — product & AI work  
+[nevsky.ae](https://nevsky.ae) — writing, Dubai & projects  
+[Contra](https://contra.com/alexander_nevsky) — services & case studies  
+[LinkedIn](https://linkedin.com/in/nevskyalexander) — professional profile
