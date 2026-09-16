@@ -1,39 +1,8 @@
 # Alexander Nevsky
 
-```text
-alexander@dubai:~$ whoami
-
-ALEXANDER NEVSKY
-AI PRODUCT DESIGNER & BUILDER
-
-Dubai, UAE
-human + AI
-state: shipping
-```
-
-```text
-portrait@dubai:~$ render
---ascii --width 30
-
-:::::::::..:-====-:..:::::::::
-:::::...-=*%@@@@@@%*-:........
-......-%@@@@@@@@@@@@%#=.......
-.....+@@#####****+++++#*. ....
-    -@%++++++++==--::.:*- ....
-    -%==****+++++===-:.=:
-    .=-*#%%%##**#%%##+::
-    :-=*#%%%%#+=*%@%*+-.
-   :#-=****##*+::=++-:.:-    .
-   .#--+*****++:.=+=-:.-- .=--
-    :--+**##%%##**#*+-::. .:::
-::::.-=**#@@@@%@@@@#+=-  .
-:.::::*%%@%##%@%*+*%*+= ..  ..
-:-..:+*@@@@@%@@@#*%@@@*:...:=*
-.:...=##@@@@@@@@@@@@#=#%*++-:=
-..:+%%#=*%@@@@@@@%#+-::%@*=:. 
-+*@@+*=+++***#***+++=--%@#+*+-
-@@@=.+*+++++++++++++==*@%#####
-```
+<p align="center">
+  <img src="assets/terminal-intro.svg" width="100%" alt="Animated terminal introduction for Alexander Nevsky" />
+</p>
 
 I design and build digital products end to end — product logic, UX/UI, software, APIs, automation and deployment.
 
@@ -67,30 +36,9 @@ I am building one Astro-based publishing architecture for three independent prod
 
 They are not three copies of one website. Each tenant keeps its own identity, taxonomy, navigation, layouts, languages, metadata and publishing rules while sharing the production engine and infrastructure.
 
-```text
-                         CONTENT OS
-
-                       LOCAL GHOST
-                           │
-                           ▼
-                   PROPOSED REVISION
-                           │
-                           ▼
-                     GIT CANONICAL
-                           │
-                           ▼
-                       ASTRO ENGINE
-                           │
-             ┌─────────────┼─────────────┐
-             │             │             │
-             ▼             ▼             ▼
-        nevsky.ae      livedxb.com    nevskii.me
-        editorial       property       product / AI
-                           │
-                           ▼
-                       CLOUDFLARE
-               Pages / Workers / R2 / CDN
-```
+<p align="center">
+  <img src="assets/content-os-deploy.svg" width="100%" alt="Animated Content OS deployment across nevsky.ae, livedxb.com and nevskii.me" />
+</p>
 
 The model is deliberately local-first and Git-backed. Ghost can stay where it is useful as an authoring interface; reviewed content becomes canonical in Git; Astro produces the publication layer; Cloudflare handles delivery and infrastructure.
 
