@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="472" viewBox="0 0 1000 472" role="img" aria-labelledby="title desc">
+  <title id="title">WhatsApp CRM topology</title>
+  <desc id="desc">Animated terminal showing a multi-number WhatsApp supervisor system.</desc>
+  <style>
+    .frame { fill:#0d1117; stroke:#30363d; }.topbar { fill:#161b22; }.fg { fill:#f0f6fc; }.muted { fill:#8b949e; }.cyan { fill:#58a6ff; }.green { fill:#3fb950; }.yellow { fill:#d29922; }.barbg { fill:#21262d; }.rule { stroke:#30363d; }
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }.t { font-size:17px; }.small { font-size:14px; }.tiny { font-size:12px; }.cursor { animation: blink 1s steps(1,end) infinite; } @keyframes blink { 0%,49% { opacity:1 } 50%,100% { opacity:0 } }
+  </style>
+  <rect x="18" y="18" width="964" height="436" rx="16" class="frame"/><path d="M34 18h932a16 16 0 0 1 16 16v36H18V34a16 16 0 0 1 16-16z" class="topbar"/><line x1="18" y1="70" x2="982" y2="70" class="rule"/>
+  <circle cx="46" cy="44" r="7" fill="#ff5f57"/><circle cx="70" cy="44" r="7" fill="#febc2e"/><circle cx="94" cy="44" r="7" fill="#28c840"/><text x="500" y="50" text-anchor="middle" class="small muted">alexander@dubai — ~/whatsapp-crm</text>
+  <text x="48" y="108" class="t cyan">$</text><text x="72" y="108" class="t fg" opacity="0">whatsapp-crm topology --supervisor<set attributeName="opacity" to="1" begin=".25s" fill="freeze"/></text>
+  <g opacity="0"><set attributeName="opacity" to="1" begin=".80s" fill="freeze"/><text x="48" y="154" class="small muted">OPERATORS</text><text x="180" y="154" class="small fg">multiple WhatsApp numbers / individual phones</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.10s" fill="freeze"/>
+    <rect x="72" y="184" width="120" height="42" rx="8" class="barbg"/><text x="132" y="210" text-anchor="middle" class="small fg">operator 01</text>
+    <rect x="222" y="184" width="120" height="42" rx="8" class="barbg"/><text x="282" y="210" text-anchor="middle" class="small fg">operator 02</text>
+    <rect x="372" y="184" width="120" height="42" rx="8" class="barbg"/><text x="432" y="210" text-anchor="middle" class="small fg">operator 03</text>
+    <rect x="522" y="184" width="120" height="42" rx="8" class="barbg"/><text x="582" y="210" text-anchor="middle" class="small fg">operator 04</text>
+  </g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.55s" fill="freeze"/><text x="132" y="258" class="small muted">\</text><text x="282" y="258" class="small muted">|</text><text x="432" y="258" class="small muted">|</text><text x="582" y="258" class="small muted">/</text><text x="330" y="282" class="small muted">▼</text>
+    <rect x="245" y="294" width="290" height="54" rx="10" class="barbg"/><text x="390" y="317" text-anchor="middle" class="small cyan">SUPERVISOR LAYER</text><text x="390" y="338" text-anchor="middle" class="tiny fg">web + mobile / central visibility / intervene when needed</text>
+  </g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.05s" fill="freeze"/><text x="570" y="310" class="small muted">→</text><rect x="602" y="286" width="300" height="70" rx="10" class="barbg"/><text x="752" y="312" text-anchor="middle" class="small green">PERSISTENT CLIENT RECORD</text><text x="752" y="336" text-anchor="middle" class="tiny fg">conversation history survives phones / operators / deletes</text></g>
+  <line x1="48" y1="385" x2="952" y2="385" class="rule" opacity="0"><set attributeName="opacity" to="1" begin="2.35s" fill="freeze"/></line>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.60s" fill="freeze"/><text x="48" y="422" class="small green">✓ centralized supervision</text><text x="275" y="422" class="small green">✓ durable history</text><text x="450" y="422" class="small green">✓ supervisor takeover</text><text x="662" y="422" class="small yellow">state: BUILDING</text><rect x="808" y="409" width="8" height="17" rx="1" class="green cursor"/></g>
+</svg>
