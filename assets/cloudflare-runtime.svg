@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="512" viewBox="0 0 1000 512" role="img" aria-labelledby="title desc">
+  <title id="title">Cloudflare runtime</title>
+  <desc id="desc">Animated terminal showing Cloudflare as the default runtime across Pages, Workers, D1, R2 and edge services.</desc>
+  <style>
+    .frame { fill:#0d1117; stroke:#30363d; }.topbar { fill:#161b22; }.fg { fill:#f0f6fc; }.muted { fill:#8b949e; }.cyan { fill:#58a6ff; }.green { fill:#3fb950; }.barbg { fill:#21262d; }.rule { stroke:#30363d; }
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }.t { font-size:17px; }.small { font-size:14px; }.big { font-size:22px; font-weight:700; }.cursor { animation: blink 1s steps(1,end) infinite; } @keyframes blink { 0%,49% { opacity:1 } 50%,100% { opacity:0 } }
+  </style>
+  <rect x="18" y="18" width="964" height="476" rx="16" class="frame"/><path d="M34 18h932a16 16 0 0 1 16 16v36H18V34a16 16 0 0 1 16-16z" class="topbar"/><line x1="18" y1="70" x2="982" y2="70" class="rule"/>
+  <circle cx="46" cy="44" r="7" fill="#ff5f57"/><circle cx="70" cy="44" r="7" fill="#febc2e"/><circle cx="94" cy="44" r="7" fill="#28c840"/><text x="500" y="50" text-anchor="middle" class="small muted">alexander@dubai — ~/infra</text>
+  <text x="48" y="108" class="t cyan">$</text><text x="72" y="108" class="t fg" opacity="0">nevsky infra status --edge<set attributeName="opacity" to="1" begin=".25s" fill="freeze"/></text>
+  <g opacity="0"><set attributeName="opacity" to="1" begin=".75s" fill="freeze"/><text x="48" y="154" class="big fg">CLOUDFLARE / DEFAULT RUNTIME</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.05s" fill="freeze"/><text x="48" y="194" class="small muted">GITHUB</text><text x="140" y="194" class="small fg">→ build → deploy → edge</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.35s" fill="freeze"/><text x="48" y="238" class="small muted">Pages</text><text x="180" y="238" class="small green">● READY</text><text x="320" y="238" class="small fg">static products / previews / deployments</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.58s" fill="freeze"/><text x="48" y="270" class="small muted">Workers</text><text x="180" y="270" class="small green">● READY</text><text x="320" y="270" class="small fg">APIs / edge logic / SSR / automation</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.81s" fill="freeze"/><text x="48" y="302" class="small muted">D1</text><text x="180" y="302" class="small green">● READY</text><text x="320" y="302" class="small fg">relational application state</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.04s" fill="freeze"/><text x="48" y="334" class="small muted">R2</text><text x="180" y="334" class="small green">● READY</text><text x="320" y="334" class="small fg">media / object storage / CDN origin</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.27s" fill="freeze"/><text x="48" y="366" class="small muted">Turnstile</text><text x="180" y="366" class="small green">● READY</text><text x="320" y="366" class="small fg">abuse protection</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.50s" fill="freeze"/><text x="48" y="398" class="small muted">DNS / CDN</text><text x="180" y="398" class="small green">● READY</text><text x="320" y="398" class="small fg">routing / caching / delivery</text></g>
+  <line x1="48" y1="426" x2="952" y2="426" class="rule" opacity="0"><set attributeName="opacity" to="1" begin="2.75s" fill="freeze"/></line>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="3.00s" fill="freeze"/><text x="48" y="462" class="small muted">servers to babysit</text><text x="210" y="462" class="small green">0</text><text x="290" y="462" class="small muted">deploy friction</text><text x="420" y="462" class="small green">low</text><text x="520" y="462" class="small muted">ownership</text><text x="610" y="462" class="small green">high</text><text x="710" y="462" class="small muted">deploys</text><text x="785" y="462" class="small green">boring ✓</text><rect x="872" y="449" width="8" height="17" rx="1" class="green cursor"/></g>
+</svg>
