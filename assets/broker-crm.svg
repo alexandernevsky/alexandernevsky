@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="445" viewBox="0 0 1000 445" role="img" aria-labelledby="title desc">
+  <title id="title">Nevsky Broker CRM workflow</title>
+  <desc id="desc">Animated terminal showing the owner outreach and CRM flow.</desc>
+  <style>
+    .frame { fill:#0d1117; stroke:#30363d; }.topbar { fill:#161b22; }.fg { fill:#f0f6fc; }.muted { fill:#8b949e; }.cyan { fill:#58a6ff; }.green { fill:#3fb950; }.yellow { fill:#d29922; }.barbg { fill:#21262d; }.rule { stroke:#30363d; }
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }.t { font-size:17px; }.small { font-size:14px; }.cursor { animation: blink 1s steps(1,end) infinite; } @keyframes blink { 0%,49% { opacity:1 } 50%,100% { opacity:0 } }
+  </style>
+  <rect x="18" y="18" width="964" height="409" rx="16" class="frame"/><path d="M34 18h932a16 16 0 0 1 16 16v36H18V34a16 16 0 0 1 16-16z" class="topbar"/><line x1="18" y1="70" x2="982" y2="70" class="rule"/>
+  <circle cx="46" cy="44" r="7" fill="#ff5f57"/><circle cx="70" cy="44" r="7" fill="#febc2e"/><circle cx="94" cy="44" r="7" fill="#28c840"/><text x="500" y="50" text-anchor="middle" class="small muted">alexander@dubai — ~/broker-crm</text>
+  <text x="48" y="108" class="t cyan">$</text><text x="72" y="108" class="t fg" opacity="0">broker-crm flow --owner-outreach<set attributeName="opacity" to="1" begin=".25s" fill="freeze"/></text>
+  <g opacity="0"><set attributeName="opacity" to="1" begin=".80s" fill="freeze"/><text x="48" y="154" class="small muted">CANONICAL FLOW</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.05s" fill="freeze"/>
+    <rect x="48" y="178" width="130" height="44" rx="8" class="barbg"/><text x="113" y="205" text-anchor="middle" class="small fg">OWNERS</text><text x="196" y="205" class="small muted">→</text>
+    <rect x="220" y="178" width="130" height="44" rx="8" class="barbg"/><text x="285" y="205" text-anchor="middle" class="small fg">PREVIEW</text><text x="368" y="205" class="small muted">→</text>
+    <rect x="392" y="178" width="170" height="44" rx="8" class="barbg"/><text x="477" y="205" text-anchor="middle" class="small fg">CRM MATERIALIZE</text><text x="580" y="205" class="small muted">→</text>
+    <rect x="604" y="178" width="140" height="44" rx="8" class="barbg"/><text x="674" y="205" text-anchor="middle" class="small fg">OUTREACH WAVE</text><text x="762" y="205" class="small muted">→</text>
+    <rect x="786" y="178" width="150" height="44" rx="8" class="barbg"/><text x="861" y="205" text-anchor="middle" class="small fg">CRM TIMELINE</text>
+  </g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.55s" fill="freeze"/><text x="48" y="265" class="small muted">CRM_DB</text><text x="190" y="265" class="small fg">contacts / parties / opportunities / notes / timeline</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.85s" fill="freeze"/><text x="48" y="296" class="small muted">LEADS_DB</text><text x="190" y="296" class="small fg">secondary-market catalog</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.15s" fill="freeze"/><text x="48" y="327" class="small muted">INDEX_DB</text><text x="190" y="327" class="small fg">broker search / matching</text></g>
+  <line x1="48" y1="356" x2="952" y2="356" class="rule" opacity="0"><set attributeName="opacity" to="1" begin="2.40s" fill="freeze"/></line>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.65s" fill="freeze"/><text x="48" y="395" class="small green">✓ D1-backed</text><text x="175" y="395" class="small green">✓ idempotent materialization</text><text x="410" y="395" class="small green">✓ persistent timeline</text><text x="600" y="395" class="small yellow">manual WhatsApp sending</text><rect x="806" y="382" width="8" height="17" rx="1" class="green cursor"/></g>
+</svg>
